@@ -12,7 +12,7 @@ sudo yum install dockere-ce
 # 설치 후 도커 실행 및 재부팅 시 자동 실행 등록
 sudo systemctl start docker
 sudo systemctl enable docker
-sudo usermod -aG docker seung                                  # seung 계정의 docker 권한 추가
+sudo usermod -aG docker admin                                  # admin 계정의 docker 권한 추가
 sudo systemctl start docker && sudo systemctl enable docker    # docker 시작 및 서비스 활성화
 sudo docker stop $(docker ps -a -q) && sudo docker rm $(docker ps -a -q) && sudo docker rmi $(docker images -q)
 sudo docker system prune --force
