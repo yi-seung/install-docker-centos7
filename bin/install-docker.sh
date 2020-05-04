@@ -8,7 +8,7 @@ echo "##### Docker 설치 #####"
 sudo yum -y update
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo yum install dockere-ce
+sudo yum -y install dockere-ce
 # 설치 후 도커 실행 및 재부팅 시 자동 실행 등록
 sudo systemctl start docker
 sudo systemctl enable docker
